@@ -11,7 +11,7 @@ public class StepDefination extends TestBase
 {
 	LoginPage LoginPage;
 	HomePage HomePage;
-		
+	// small changes are done	
 	
 	@Given("^user is already on login page$")
 	public void user_is_already_on_login_page() 

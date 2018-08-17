@@ -33,14 +33,15 @@ private JavascriptExecutor js;
 	{
 		username.sendKeys(un);
 		password.sendKeys(psw);
+		TestUtil.ActionForMovetoElement(login_button);
 		try
 		{
-		TestUtil.VisibleOn(driver, login_button, 50);
-		TestUtil.ActionForMovetoElement(login_button);
+		TestUtil.ClickOn(driver, login_button, 50);
+		
 		}
 		catch(Exception e)
 		{
-			System.out.println("Element- login_button is not seen with in 30 sec");
+			System.out.println("Element- login_button is not seen with in 50 sec");
 		}
 		login_button.click();
 		
